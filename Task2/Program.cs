@@ -1,26 +1,16 @@
 ﻿// Write a program that takes natural number N  as input 
-// and shows whether the first number is the square of the second.
+// and shows all integer numbers between -N and N.
 
-// a = 25, b = 5 =>> yes
-// a = 2, b = 18 =>> no
-// a = 9, b = -3 =>> yes
-// a = -3, b = 9 =>> no
+// 4 =>> -4, -3, -2, -1, 0, 1, 2, 3, 4
+// 2 =>> -2, -1, 0, 1, 2
 
-Console.WriteLine("Input first number: ");
-int num1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Input positive integer: ");
+int num = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Input second number: ");
-int num2 = Convert.ToInt32(Console.ReadLine());
-
-// or 
-// string num1str = Console.ReadLine();
-// int num1 = Convert.ToInt32(num1str); 
-           
-if (num1 == num2 * num2)
+int count = -num;
+while (count <= num)
 {
-    Console.WriteLine("First number is square of second number.");
+  Console.Write(count + ", "); 
+  count++; //count = count+1;
 }
-else
-{
-    Console.WriteLine("First number is not square of second number.");
-}
+
