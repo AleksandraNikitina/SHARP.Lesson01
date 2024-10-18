@@ -27,16 +27,22 @@
 // Write a program that takes two integers as input and 
 // checks is the first number divisible by the second number.  
 
+using System.Diagnostics.Tracing;
+
 Console.WriteLine("Enter two integers.");
 Console.Write("First number: ");
 int num1 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Second number: ");
 int num2 = Convert.ToInt32(Console.ReadLine());
 
- if ((num1 % num2) == 0)
- {
+if (num2 == 0)
+{
+    Console.WriteLine("You can't divide by zero.");
+}
+else if (num1 % num2 == 0)
+{
     Console.WriteLine("Divisible");
- }
+}
 else 
 {
     Console.WriteLine("Not divisible");
