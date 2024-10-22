@@ -8,12 +8,15 @@ if (num2 == 0)
 {
     Console.WriteLine("You can't divide by zero.");
 }
-else if (num1 % num2 == 0)
-{
-    Console.WriteLine("Divisible");
-}
-else
+else 
 {
     int remainder = num1 % num2;
-    Console.WriteLine($"Remainder from division = {remainder}");
+    if (remainder == 0)
+    {
+        Console.WriteLine("Divisible");
+    }
+    else
+    {
+        Console.WriteLine($"Remainder from division = {remainder}");
+    }
 }
