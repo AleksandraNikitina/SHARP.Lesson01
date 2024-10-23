@@ -1,7 +1,6 @@
 ﻿
 Console.WriteLine("Enter number: ");
 int num = Convert.ToInt32(Console.ReadLine());
-
 int firstRank = 1;
 
 for (int currentRank = 1; num/currentRank != 0; currentRank = currentRank * 10)
